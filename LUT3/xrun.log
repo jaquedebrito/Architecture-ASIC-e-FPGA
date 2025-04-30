@@ -1,0 +1,72 @@
+xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s001: Started on Apr 30, 2025 at 16:27:28 -03
+xrun
+	lut_3.sv
+	lut_3_tb.sv
+	-gui
+	-access +rw
+file: lut_3.sv
+	module worklib.LUT3:sv
+		errors: 0, warnings: 0
+file: lut_3_tb.sv
+	module worklib.lut_3_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		lut_3_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LUT3:sv <0x0e8a10bf>
+			streams:   2, words:  6320
+		worklib.LUT3:sv <0x5a070905>
+			streams:   2, words:  6317
+		worklib.lut_3_tb:sv <0x08d4e17a>
+			streams:  12, words: 10898
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5       2
+		Registers:              30      15
+		Scalar wires:           21       -
+		Always blocks:           4       1
+		Initial blocks:          2       2
+		Cont. assignments:       1       1
+		Pseudo assignments:      8       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.lut_3_tb:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /usr/local/cds/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> scope -set lut_3_tb.AND1_OR
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm lut_3_tb.A0 lut_3_tb.A1 lut_3_tb.A2 lut_3_tb.A3 lut_3_tb.AND1_OR_out lut_3_tb.AND2_OR_out lut_3_tb.NAND1_out lut_3_tb.NAND2_out lut_3_tb.Y
+Created probe 1
+xcelium> run
+Tempo | A3  A2  A1  A0 |AND1|NAND1|NAND2|AND2 | Y
+===== | ============== |====|=====|=====|==== | =
+    0   | 0  0  0  0 	| 1 |  0  |  0  |  1  | 1
+   10   | 0  0  0  1 	| 1 |  1  |  0  |  1  | 1
+   20   | 0  0  1  0 	| 1 |  0  |  1  |  1  | 1
+   30   | 0  0  1  1 	| 1 |  1  |  1  |  1  | 0
+   40   | 0  1  0  0 	| 1 |  1  |  1  |  1  | 0
+   50   | 0  1  0  1 	| 1 |  1  |  1  |  1  | 0
+   60   | 0  1  1  0 	| 1 |  1  |  1  |  1  | 0
+   70   | 0  1  1  1 	| 1 |  1  |  1  |  1  | 0
+   80   | 1  0  0  0 	| 1 |  1  |  1  |  1  | 0
+   90   | 1  0  0  1 	| 1 |  1  |  1  |  1  | 0
+  100   | 1  0  1  0 	| 1 |  1  |  1  |  1  | 0
+  110   | 1  0  1  1 	| 1 |  1  |  1  |  1  | 0
+  120   | 1  1  0  0 	| 1 |  1  |  1  |  1  | 0
+  130   | 1  1  0  1 	| 1 |  1  |  1  |  0  | 1
+  140   | 1  1  1  0 	| 0 |  1  |  1  |  1  | 1
+  150   | 1  1  1  1 	| 0 |  1  |  1  |  0  | 1
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	24.09-s001: Exiting on Apr 30, 2025 at 16:28:48 -03  (total: 00:01:20)

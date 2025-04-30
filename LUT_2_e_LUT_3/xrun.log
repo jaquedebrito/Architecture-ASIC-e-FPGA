@@ -1,0 +1,70 @@
+xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s001: Started on Apr 30, 2025 at 16:23:56 -03
+xrun
+	lut2_e_3.sv
+	lut2_e_3_tb.sv
+	-gui
+	-access +rw
+file: lut2_e_3.sv
+	module worklib.LUT2:sv
+		errors: 0, warnings: 0
+	module worklib.LUT3:sv
+		errors: 0, warnings: 0
+file: lut2_e_3_tb.sv
+	module worklib.lut_2_3_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		lut_2_3_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LUT3:sv <0x7d7fee04>
+			streams:   2, words:  6320
+		worklib.LUT2:sv <0x51571a0a>
+			streams:   2, words:  1120
+		worklib.LUT2:sv <0x5662324a>
+			streams:   2, words:   778
+		worklib.lut_2_3_tb:sv <0x62a41f4f>
+			streams:  14, words:  6617
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 7       3
+		Registers:              25      17
+		Scalar wires:           25       -
+		Vectored wires:          5       -
+		Always blocks:           6       2
+		Initial blocks:          1       1
+		Cont. assignments:       5       1
+		Pseudo assignments:     13       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.lut_2_3_tb:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /usr/local/cds/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> scope -set lut_2_3_tb.XOR1
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm lut_2_3_tb.A lut_2_3_tb.AND1_out lut_2_3_tb.AND2_out lut_2_3_tb.AND3_out lut_2_3_tb.B lut_2_3_tb.Cin lut_2_3_tb.Cout lut_2_3_tb.S lut_2_3_tb.XOR1_out
+Created probe 1
+xcelium> run
+A B Cin |    S    |   Cout
+======= |  =====  |  =====
+0 0 0   |    0         0
+0 0 1   |    1         0
+0 1 0   |    1         0
+0 1 1   |    0         1
+0 0 0   |    0         0
+0 0 1   |    1         0
+0 1 0   |    1         0
+0 1 1   |    0         1
+Simulation complete via $finish(1) at time 40 PS + 0
+./lut2_e_3_tb.sv:50         $finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	24.09-s001: Exiting on Apr 30, 2025 at 16:24:51 -03  (total: 00:00:55)
