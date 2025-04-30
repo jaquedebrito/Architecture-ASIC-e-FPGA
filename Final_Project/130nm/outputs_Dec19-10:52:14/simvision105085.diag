@@ -1,0 +1,104 @@
+*** Message Type: info ***
+When: qui dez 19 11:21:34 -03 2024
+SimVision started.
+Version: TOOL:  simvision(64)   22.09-s013
+User: aluno
+Host: lad-194.dsc.ufcg.edu.br
+Platform: Linux/x86_64/4.18.0-553.32.1.el8_10.x86_64
+Started: qui dez 19 11:21:34 -03 2024
+Command: /usr/local/cds/XCELIUM2209/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:lad-194.dsc.ufcg.edu.br:33957 -64BIT -nocopyright
+Work Directory: /home/aluno/arch_fpga_asic/final_project/130nm/outputs_Dec19-10:52:14
+ 
+*** Message Type: info ***
+When: qui dez 19 11:21:35 -03 2024
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: qui dez 19 11:21:37 -03 2024
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: qui dez 19 11:21:39 -03 2024
+Connect to Simulator
+      Design: worklib.ULA_tb:sv
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:  xmsim(64)       22.09-s013
+        User: aluno
+        Host: lad-194.dsc.ufcg.edu.br
+Time Started: qui dez 19 11:21:34 -03 2024
+  Process ID: 104983
+   Directory: /home/aluno/arch_fpga_asic/final_project/130nm/outputs_Dec19-10:52:14
+     Command: xrun -64bit ULA.v ULA_tb.sv sky130_scl_9T.v -gui -access rw
+
+ 
+*** Message Type: info ***
+When: qui dez 19 11:21:39 -03 2024
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: qui dez 19 11:21:45 -03 2024
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: error ***
+When: qui dez 19 11:22:17 -03 2024
+can't read "simdata(Arguments)": no such element in array
+can't read "simdata(Arguments)": no such element in array
+    while executing
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "util::connect" line 1)
+    invoked from within
+"util::connect -dialog -parentwin $itk_component(hull)"
+    (object "::.waveWindow0" method "::SVToolWindow::_doConnect" body line 3)
+    invoked from within
+"_doConnect"
+    (object "::.waveWindow0" method "::SVToolWindow::connectSim" body line 2)
+    invoked from within
+"$_window connectSim"
+    ("connect" arm line 2)
+    invoked from within
+"switch -- $op {
+    open {
+     $_window openDB
+    }
+      connect {
+          $_window connectSim
+        }
+      opensource {
+       $_window openSource
+        }
+      sendtowindow {
+     ..."
+    (object "::SVSidebarManager::designBrowserSidebar1" method "::DesignBrowserSidebar::_windowOp" body line 2)
+    invoked from within
+"::SVSidebarManager::designBrowserSidebar1 _windowOp connect"
+    (in namespace inscope "::DesignBrowserSidebar" script line 1)
+    invoked from within
+"namespace inscope ::DesignBrowserSidebar {::SVSidebarManager::designBrowserSidebar1 _windowOp connect}"
+    invoked from within
+".waveWindow0.work.sidebars.csite.tabs.tab1.browse.tree.popup invoke active"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke active]"
+    (procedure "tk::MenuInvoke" line 50)
+    invoked from within
+"tk::MenuInvoke .waveWindow0.work.sidebars.csite.tabs.tab1.browse.tree.popup 1"
+    (command bound to event)
+ 
+*** Message Type: info ***
+When: qui dez 19 11:22:21 -03 2024
+Create schematic window: "Schematic Tracer 1"
+ 
+*** Message Type: info ***
+When: qui dez 19 11:22:32 -03 2024
+Delete schematic window: "Schematic Tracer 1"
+ 
+*** Message Type: info ***
+When: qui dez 19 11:22:34 -03 2024
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: qui dez 19 11:22:36 -03 2024
+Create schematic window: "Schematic Tracer 2"
+ 

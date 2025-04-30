@@ -1,0 +1,152 @@
+xrun(64): 22.09-s013: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s013: Started on Dec 19, 2024 at 11:41:46 -03
+xrun
+	-64bit
+	ULA.v
+	ULA_tb.sv
+	sky130_scl_9T.v
+	-gui
+	-access rw
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ULA_tb
+		ADDHX1
+		AND2X2
+		AND3X1
+		AND3X2
+		AND4X1
+		AND4X2
+		AOI211X2
+		AOI21X2
+		AOI221X2
+		AOI222X2
+		AOI22X2
+		BUFX16
+		BUFX2
+		BUFX4
+		BUFX8
+		CLKAND2X2
+		CLKBUFX2
+		CLKBUFX4
+		CLKBUFX8
+		CLKINVX1
+		CLKINVX4
+		CLKINVX8
+		DFFRX1
+		DFFRX4
+		DFFSRX1
+		DFFSRX4
+		DFFSX1
+		DFFSX4
+		DFFX1
+		DFFX4
+		DLY1X1
+		DLY1X4
+		DLY2X4
+		DLY4X4
+		ICGX1
+		INVX16
+		INVX4
+		INVX8
+		MX2X1
+		MX2X4
+		MX4X1
+		MX4X4
+		NAND2X2
+		NAND2X4
+		NAND3X2
+		NAND3X4
+		NAND4X1
+		NAND4X2
+		NAND4X4
+		NOR2X2
+		NOR2X4
+		NOR3X2
+		NOR3X4
+		NOR4X2
+		NOR4X4
+		OAI211X2
+		OAI21X2
+		OAI221X2
+		OAI222X2
+		OAI22X2
+		OR2X1
+		OR3X2
+		OR4X1
+		OR4X2
+		SDFFRX1
+		SDFFRX4
+		SDFFSRX1
+		SDFFSRX4
+		SDFFSX1
+		SDFFSX4
+		SDFFX1
+		SDFFX4
+		TBUFX1
+		TBUFX4
+		TBUFX8
+		TIEHI
+		TIELO
+		TLATSRX1
+		TLATX1
+		XNOR2X1
+		XNOR2X4
+		XOR2X1
+		XOR2X2
+		XOR2X4
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  448     111
+		UDPs:                      35      14
+		Primitives:              2304       5
+		Timing outputs:           497     109
+		Registers:                 27      41
+		Scalar wires:             823       -
+		Expanded wires:            27       4
+		Initial blocks:             2       2
+		Pseudo assignments:         5       5
+		Timing checks:            298       -
+		Delayed tcheck signals:    64      64
+		Simulation timescale:    10ps
+	Writing initial simulation snapshot: worklib.ULA_tb:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /usr/local/cds/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm ULA_tb.A ULA_tb.B ULA_tb.F ULA_tb.M ULA_tb.S ULA_tb.error_flag ULA_tb.expected ULA_tb.i
+Created probe 1
+xcelium> run
+Tempo =  0 | A = 00000000 | B = 00000000 | i = 00000000 | S = 000 | M = 0 | F = 00000000 | Esperado = 00000000
+Testando operações lógicas (M = 1): Tempo = 100, i = 0, S = 000,  M = 0, Esperado = 00, F = 00
+Tempo = 100 | A = 00011001 | B = 11100110 | i = 00000000 | S = 000 | M = 1 | F = 11100110 | Esperado = 11100110
+Tempo = 600 | A = 00011001 | B = 11100110 | i = 00000001 | S = 001 | M = 1 | F = 00000000 | Esperado = 00000000
+Tempo = 1100 | A = 00011001 | B = 11100110 | i = 00000010 | S = 010 | M = 1 | F = 11111111 | Esperado = 11111111
+Tempo = 1600 | A = 00011001 | B = 11100110 | i = 00000011 | S = 011 | M = 1 | F = 00000000 | Esperado = 00000000
+Tempo = 2100 | A = 00011001 | B = 11100110 | i = 00000100 | S = 100 | M = 1 | F = 00000000 | Esperado = 00000000
+Tempo = 2600 | A = 00011001 | B = 11100110 | i = 00000101 | S = 101 | M = 1 | F = 11111111 | Esperado = 11111111
+Tempo = 3100 | A = 00011001 | B = 11100110 | i = 00000110 | S = 110 | M = 1 | F = 11111111 | Esperado = 11111111
+Tempo = 3600 | A = 00011001 | B = 11100110 | i = 00000111 | S = 111 | M = 1 | F = 00011001 | Esperado = 00011001
+Testando operações Artiméticas (M = 0): Tempo = 4100, i = 8, S = 111,  M = 1, Esperado = 19, F = 19
+Tempo = 4100 | A = 00011001 | B = 11100110 | i = 00000000 | S = 000 | M = 0 | F = 11111111 | Esperado = 11111111
+Tempo = 4600 | A = 00011001 | B = 11100110 | i = 00000001 | S = 001 | M = 0 | F = 00110011 | Esperado = 00110011
+Tempo = 5100 | A = 00011001 | B = 11100110 | i = 00000010 | S = 010 | M = 0 | F = 01110110 | Esperado = 01110110
+Tempo = 5600 | A = 00011001 | B = 11100110 | i = 00000011 | S = 011 | M = 0 | F = 00000000 | Esperado = 00000000
+Tempo = 6100 | A = 00011001 | B = 11100110 | i = 00000100 | S = 100 | M = 0 | F = 00011000 | Esperado = 00011000
+Tempo = 6600 | A = 00011001 | B = 11100110 | i = 00000101 | S = 101 | M = 0 | F = 11100101 | Esperado = 11100101
+Tempo = 7100 | A = 00011001 | B = 11100110 | i = 00000110 | S = 110 | M = 0 | F = 00110010 | Esperado = 00110010
+Tempo = 7600 | A = 00011001 | B = 11100110 | i = 00000111 | S = 111 | M = 0 | F = 11001100 | Esperado = 11001100
+Todos os testes passaram com sucesso!
+Tempo = 8100, M = 0, S = 111, F = cc, expected = cc
+Simulation stopped via $stop(1) at time 81 NS + 0
+xcelium> xmsim: *W,NCTERM: Simulation received SIGTERM signal from process 104602, user id 1001 (<unknown>).
+TOOL:	xrun(64)	22.09-s013: Exiting on Dec 19, 2024 at 11:48:24 -03  (total: 00:06:38)

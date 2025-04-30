@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(19Dec2024:11:20:00):( xrun -64bit ULA.v ULA_tb.sv sky130_scl_9T.v )
+s2::(19Dec2024:11:20:39):( xrun -64bit ULA.v ULA_tb.sv sky130_scl_9T.v )
+s3::(19Dec2024:11:21:32):( xrun -64bit ULA.v ULA_tb.sv sky130_scl_9T.v -gui -access rw )
+s4::(19Dec2024:11:40:32):( xrun -64bit ULA.v ULA_tb.sv sky130_scl_9T.v )
+s5::(19Dec2024:11:41:46):( xrun -64bit ULA.v ULA_tb.sv sky130_scl_9T.v -gui -access rw )
