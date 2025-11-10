@@ -1,0 +1,31 @@
+# Backup files
+*.backup
+*_OLD.md
+*~
+*.bak
+
+# Simulation logs
+*.log
+xrun.log
+*.history
+
+# Synthesis outputs
+outputs_*/
+reports_*/
+*.syn/
+*.fv/
+
+# Temporary files
+*.tmp
+*.swp
+.DS_Store
+
+# Genus specific
+.cadence/
+genus.cmd*
+genus.log*
+
+# Xcelium specific
+xcelium.d/
+INCA_libs/
+*.shm/

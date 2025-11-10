@@ -1,7 +1,14 @@
-// Aluna: Jaqueline Ferreira de Brito
-
-// Modulo ULA (Unidade Lógica Aritmética)
-
+//==============================================================================
+// ULA - Unidade Lógica Aritmética (Arithmetic Logic Unit)
+//==============================================================================
+// Author: Jaqueline Ferreira de Brito
+// Description: 8-bit ALU with arithmetic and logic operations
+// Technology: 130nm (sky130 library)
+//
+// Operations:
+//   M=0 (Arithmetic): ADD, SUB, MUL, DIV, DEC, COMPLEMENT
+//   M=1 (Logic):      NOT, AND, OR, XOR, NAND, NOR, XNOR
+//==============================================================================
 module ULA (
 
 	 //inputs

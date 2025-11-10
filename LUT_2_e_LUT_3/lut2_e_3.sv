@@ -1,3 +1,11 @@
+//==============================================================================
+// LUT2 and LUT3 - Combined Look-Up Table Implementations
+//==============================================================================
+// Description: File containing both 2-input and 3-input LUT implementations
+// LUT2: 2-input LUT with 4-bit INIT parameter
+// LUT3: 3-input LUT with 8-bit INIT parameter
+//==============================================================================
+
 `timescale  1 ps / 1 ps
 
 module LUT2 (O, I0, I1);
