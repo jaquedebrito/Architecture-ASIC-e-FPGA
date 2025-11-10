@@ -18,6 +18,7 @@
 - [Technology Comparison](#technology-comparison)
 - [Learning Objectives](#learning-objectives)
 - [How to Use](#how-to-use)
+- [Additional Resources](#additional-resources)
 - [Author](#author)
 - [Português](#português)
 
@@ -179,6 +180,23 @@ Each technology folder contains TCL scripts for automated synthesis:
 # - Synthesize
 # - Generate reports
 ```
+
+---
+
+## 📚 Additional Resources
+
+This repository includes comprehensive documentation to help you get started:
+
+- **[SUMMARY.md](SUMMARY.md)** - Detailed project summary with insights and conclusions
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick reference guide with commands and examples
+- **[Final_Project/README.md](Final_Project/README.md)** - In-depth ALU project documentation
+
+### Recommended Reading
+
+- SystemVerilog Language Reference Manual
+- Cadence Genus and Xcelium documentation
+- SkyWater 130nm PDK documentation
+- Digital Design and Computer Architecture textbooks
 
 ---
 
