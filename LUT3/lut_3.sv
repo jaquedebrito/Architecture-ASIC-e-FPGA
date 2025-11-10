@@ -1,3 +1,12 @@
+//==============================================================================
+// LUT3 - 3-Input Look-Up Table
+//==============================================================================
+// Description: Configurable 3-input LUT with 8-bit initialization parameter
+// Inputs: I0, I1, I2 (3 bits)
+// Output: O (1 bit)
+// Parameter: INIT (8 bits) - defines the truth table
+//==============================================================================
+
 `timescale 1 ps / 1 ps
 
 module LUT3 (O, I0, I1, I2);

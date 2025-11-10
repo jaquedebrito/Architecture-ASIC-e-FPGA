@@ -1,3 +1,12 @@
+//==============================================================================
+// LUT2 - 2-Input Look-Up Table
+//==============================================================================
+// Description: Configurable 2-input LUT with 4-bit initialization parameter
+// Inputs: I0, I1 (2 bits)
+// Output: O (1 bit)
+// Parameter: INIT (4 bits) - defines the truth table
+//==============================================================================
+
 `timescale  1 ps / 1 ps
 
 
